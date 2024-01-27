@@ -29,7 +29,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/kglobaltraders" target="_blank" rel="noopener noreferrer">
                 <FiInstagram className="text-2xl cursor-pointer" />
               </a>
-              <a href="https://twitter.com/KGlobalTraders" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/kglobaltraders" target="_blank" rel="noopener noreferrer">
                 <FiFacebook className="text-2xl cursor-pointer" />
               </a>
               <a href="https://twitter.com/KGlobalTraders" target="_blank" rel="noopener noreferrer">

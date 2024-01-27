@@ -1,45 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/About';
-import Products from './components/products.js';
+import Products from './components/products';
 import Contact from './components/contact';
-import Testimonies from './components/testimonies.js';
-const router = createBrowserRouter([
-  { path: '/', 
-    element:<Home />
-  },
+import Collaborate from './components/Collaborate';
+// import Testimonies from './components/Testimonies';
+import ImportProduct from './components/importProduct';
 
-  { path: '/about', 
-    element:<About />
-  },
+const rootElement = document.getElementById('root');
 
-  { path: '/products', 
-    element:<Products />
-  },
-
-  { path: '/contact', 
-    element:<Contact />
-  },
-
-  { path: '/testimonies', 
-    element:<Testimonies />
-  },
-])
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router} /> 
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/collaborate" element={<Collaborate />} />
+
+        {/* <Route path="/testimonies" element={<Testimonies />} /> */}
+        <Route path="/importProducts" element={<ImportProduct />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

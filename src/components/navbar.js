@@ -24,10 +24,12 @@ const Navbar = () => {
             />
             <ul className="text-purple-600 space-y-4 text-center text-xl">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">Linkbout</Link></li>
+              <li><Link to="/about">About</Link></li>
               <li><Link to="/products">Products</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/testimonies">Testimonials</Link></li>
+              <li><Link to="/collaborate">To Collaborate</Link></li>
+
+              {/* <li><Link to="/testimonies">Testimonials</Link></li> */}
 {/* 
               <Link to='/'>Home</Link>
               <Link to='/about'>about</Link>
@@ -47,7 +49,10 @@ const Navbar = () => {
         <Link to="/about" className="text-purple-600 hover:text-#9F03FF px-7">About</Link>
         <Link to="/products" className="text-purple-600 hover:text-#9F03FF px-7">Products</Link>
         <Link to="/contact" className="text-purple-600 hover:text-#9F03FF px-7">Contact</Link>
-        <Link to="/testimonies" className="text-purple-600 hover:text-#9F03FF px-7">Testimonials</Link>
+        <Link to="/collaborate" className="text-purple-600 hover:text-#9F03FF px-7">To Collaborate</Link>
+
+
+        {/* <Link to="/testimonies" className="text-purple-600 hover:text-#9F03FF px-7">Testimonials</Link> */}
       </div>
     </nav>
   );
